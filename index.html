@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>IoT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<title>IoT</title>
 </head>
+
+
 <body>
-  https://placehold.co/840x472
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">	
+			<span class="navbar-text fw-semibold">
+				Pslib IoT Dashboard
+			</span>
+			
+			<ul class="nav mx-auto">
+				<li class="nav-item"><a class="nav-link active" href="#">Dům</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Garáž</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Zahrada</a></li>
+			</ul>
+
+			
+			<p class="mb-0 small">3.1.2025, 17:25</p>
+		</div>
+	</nav>
+
+	<div class="container-fluid mt-3">
+		<div class="row">
+			
+			<div class="col-12 col-md-3 col-lg-3 sidebar">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action active">
+						<i class="bi bi-house-door me-2"></i> Hlavní panel
+					</a>
+					<a href="#"
+						class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+						<span><i class="bi bi-bell me-2"></i> Oznámení</span>
+						<span class="badge bg-primary rounded-pill">2</span>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<i class="bi bi-hdd-network me-2"></i> Moje zařízení
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<i class="bi bi-gear me-2"></i> Nastavení
+					</a>
+				</div>
+			</div>
+
+			
+			<div class="col-12 col-md-9 col-lg-9">
+
+				
+				<div class="row g-3 mb-3">
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-3">
+						<div class="card text-center h-100">
+							<div class="card-body">
+								<h5 class="card-title">Teplota - hlavní chodba</h5>
+								<p class="fs-4 mb-1">23.4 °C</p>
+								<small class="text-muted d-block mb-2">Další měření za: 5 minut</small>
+								<button class="btn btn-primary btn-sm">Změřit teď</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-3">
+						<div class="card text-center h-100">
+							<div class="card-body">
+								<h5 class="card-title">Teplota - kuchyně</h5>
+								<p class="fs-4 mb-1">25.2 °C</p>
+								<small class="text-muted d-block mb-2">Další měření za: 12 minut</small>
+								<button class="btn btn-primary btn-sm">Změřit teď</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-3">
+						<div class="card text-center border-success h-100">
+							<div class="card-body">
+								<h5 class="card-title">Přední vchod</h5>
+								<i class="bi bi-lock mb-2 fs-3"></i>
+								<small class="d-block mb-2">Zamknuto</small>
+								<button class="btn btn-warning btn-sm">Odemknout</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-3">
+						<div class="card text-center border-danger h-100">
+							<div class="card-body">
+								<h5 class="card-title">Přední vchod</h5>
+								<i class="bi bi-unlock mb-2 fs-3"></i>
+								<small class="d-block mb-2">Odemknuto</small>
+								<button class="btn btn-success btn-sm">Zamknout</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+				<div class="row g-3">
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-4">
+						<div class="card text-center h-100">
+							<div class="card-body">
+								<h5 class="card-title">Kamera Západ</h5>
+								<img src="Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg" class="img-fluid" alt="Kamera Západ">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-xl-6 col-xxl-4">
+						<div class="card text-center h-100">
+							<div class="card-body">
+								<h5 class="card-title">Kamera Východ</h5>
+								<img src="kamera vychod.jpg" class="img-fluid" alt="Kamera Východ">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-12 col-xl-12 col-xxl-4">
+						<div class="card text-center h-100">
+							<div class="card-body">
+								<h5 class="card-title">Kamera Sever</h5>
+								<img src="jih.jfif" class="img-fluid" alt="Kamera Sever">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div> 
+		</div> 
+	</div> 
 </body>
+
 </html>
